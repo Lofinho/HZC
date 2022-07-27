@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    </head>
+    <body>
+        <header class="cabecalho">
+            <button class="cabecalho__menu" aria-label="Menu">
+                <img src="icons/menu.svg" />
+            </button>
+            <img
+                src="icons/logo.svg"
+                alt="Logotipo da HZC"
+                class="cabecalho__logo"
+            />
+            <p class="cabecalho__perfil">Leonardo Watson</p>
+            <button class="cabecalho__notificacao" aria-label="Notificação">
+                <img src="icons/notificacao.svg" />
+            </button>
+        </header>
+
+        <nav class="menu-lateral">
+            <ul class="menu-lateral-links">
+                <li class="menu-lateral-logo">
+                    <img src="icons/logo.svg" alt="Logo HZC" />
+                </li>
+                <li>
+                    <a href="#" class="ativo">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M19 9.3V4H16V6.6L12 3L2 12H5V20H11V14H13V20H19V12H22L19 9.3ZM17 18H15V12H9V18H7V10.19L12 5.69L17 10.19V18Z"
+                                fill="#95999C"
+                            />
+                            <path
+                                d="M10 10H14C14 8.9 13.1 8 12 8C10.9 8 10 8.9 10 10Z"
+                                fill="black"
+                                fill-opacity="0.54"
+                            />
+                        </svg>
+                        Início
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M15 8V16H5V8H15ZM16 6H4C3.45 6 3 6.45 3 7V17C3 17.55 3.45 18 4 18H16C16.55 18 17 17.55 17 17V13.5L21 17.5V6.5L17 10.5V7C17 6.45 16.55 6 16 6Z"
+                                fill="#95999C"
+                            />
+                        </svg>
+                        Vídeos
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M12 4C13.93 4 17 5.4 17 9.15C17 11.31 15.28 13.82 12 16.47C8.72 13.82 7 11.3 7 9.15C7 5.4 10.07 4 12 4ZM12 2C8.73 2 5 4.46 5 9.15C5 12.27 7.33 15.56 12 19C16.67 15.56 19 12.27 19 9.15C19 4.46 15.27 2 12 2Z"
+                                fill="#95999C"
+                            />
+                            <path
+                                d="M12 7C10.9 7 10 7.9 10 9C10 10.1 10.9 11 12 11C12.5304 11 13.0391 10.7893 13.4142 10.4142C13.7893 10.0391 14 9.53043 14 9C14 8.46957 13.7893 7.96086 13.4142 7.58579C13.0391 7.21071 12.5304 7 12 7ZM5 20H19V22H5V20Z"
+                                fill="#95999C"
+                            />
+                        </svg>
+                        Picos
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M12.5002 10C12.5002 8.35001 11.1502 7.00001 9.50023 7.00001C7.85023 7.00001 6.50023 8.35001 6.50023 10C6.50023 11.65 7.85023 13 9.50023 13C11.1502 13 12.5002 11.65 12.5002 10ZM9.50023 11C8.95023 11 8.50023 10.55 8.50023 10C8.50023 9.45001 8.95023 9.00001 9.50023 9.00001C10.0502 9.00001 10.5002 9.45001 10.5002 10C10.5002 10.55 10.0502 11 9.50023 11ZM16.0002 13C17.1102 13 18.0002 12.11 18.0002 11C18.0002 9.89001 17.1102 9.00001 16.0002 9.00001C14.8902 9.00001 13.9902 9.89001 14.0002 11C14.0002 12.11 14.8902 13 16.0002 13ZM11.9902 2.01001C6.47023 2.01001 1.99023 6.49001 1.99023 12.01C1.99023 17.53 6.47023 22.01 11.9902 22.01C17.5102 22.01 21.9902 17.53 21.9902 12.01C21.9902 6.49001 17.5102 2.01001 11.9902 2.01001ZM5.84023 17.12C6.52023 16.58 8.11023 16.01 9.50023 16.01C9.57023 16.01 9.65023 16.02 9.73023 16.02C9.97023 15.38 10.4002 14.73 11.0302 14.16C10.4702 14.06 9.94023 14 9.50023 14C8.20023 14 6.11023 14.45 4.77023 15.43C4.27023 14.39 3.99023 13.23 3.99023 12C3.99023 7.59001 7.58023 4.00001 11.9902 4.00001C16.4002 4.00001 19.9902 7.59001 19.9902 12C19.9902 13.2 19.7202 14.34 19.2402 15.37C18.2402 14.78 16.8802 14.5 16.0002 14.5C14.4802 14.5 11.5002 15.31 11.5002 17.2V19.98C9.23023 19.85 7.21023 18.77 5.84023 17.12Z"
+                                fill="#95999C"
+                            />
+                        </svg>
+                        Integrantes
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9H15V22H13V16H11V22H9V9H3V7H21V9Z"
+                                fill="#95999C"
+                            />
+                        </svg>
+                        Camisas
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M4 4H11V2H4C2.9 2 2 2.9 2 4V11H4V4ZM10 13L6 18H18L15 14L12.97 16.71L10 13ZM17 8.5C17 7.67 16.33 7 15.5 7C14.67 7 14 7.67 14 8.5C14 9.33 14.67 10 15.5 10C16.33 10 17 9.33 17 8.5ZM20 2H13V4H20V11H22V4C22 2.9 21.1 2 20 2ZM20 20H13V22H20C21.1 22 22 21.1 22 20V13H20V20ZM4 13H2V20C2 21.1 2.9 22 4 22H11V20H4V13Z"
+                                fill="#95999C"
+                            />
+                        </svg>
+                        Pinturas
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="principal">
+            <h2 class="titulo-pagina">Início</h2>
+            <article class="cartao cartao--destaque destaque-video">
+                <img
+                    src="img/banner-mobile_1.png"
+                    alt="Banner do cartao"
+                    class="cartao__imagem cartao__imagem--mobile"
+                />
+                <img
+                    src="img/banner_1.png"
+                    alt="Banner do cartao"
+                    class="cartao__imagem cartao__imagem--desktop"
+                />
+                <div class="cartao__conteudo">
+                    <p class="cartao__destaque">Vídeo em destaque</p>
+                    <h3 class="cartao__titulo">HZC - Título</h3>
+                    <p class="cartao__perfil">Bruno Lopez</p>
+                    <p class="cartao__info cartao__info--tempo">33 minutos</p>
+                    <p class="cartao__info cartao__info--visualizacao">
+                        33 visualizações
+                    </p>
+                    <button
+                        class="cartao__botao cartao__botao--play cartao__botao--destaque"
+                    >
+                        Assistir agora
+                    </button>
+                </div>
+            </article>
+            <article class="cartao cartao--recentes videos-recentes">
+                <h3 class="cartao__titulo">Vídeos recentes</h3>
+                <a href="#" class="cartao__link">Ver todos</a>
+                <ul class="cartao__lista">
+                    <li class="cartao__item">
+                        <img
+                            src="img/miniatura_1.png"
+                            alt="Thumbnail"
+                            class="cartao__item-thumbnail"
+                        />
+                        <h4 class="cartao__item-titulo">HZC - Love machine</h4>
+                        <p class="cartao__item-perfil">Bruno Lopez</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img
+                            src="img/miniatura_2.png"
+                            alt="Thumbnail"
+                            class="cartao__item-thumbnail"
+                        />
+                        <h4 class="cartao__item-titulo">HZC - Love machine</h4>
+                        <p class="cartao__item-perfil">Bruno Lopez</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img
+                            src="img/miniatura_3.png"
+                            alt="Thumbnail"
+                            class="cartao__item-thumbnail"
+                        />
+                        <h4 class="cartao__item-titulo">HZC - Love machine</h4>
+                        <p class="cartao__item-perfil">Bruno Lopez</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img
+                            src="img/miniatura_4.png"
+                            alt="Thumbnail"
+                            class="cartao__item-thumbnail"
+                        />
+                        <h4 class="cartao__item-titulo">HZC - Love machine</h4>
+                        <p class="cartao__item-perfil">Bruno Lopez</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img
+                            src="img/miniatura_5.png"
+                            alt="Thumbnail"
+                            class="cartao__item-thumbnail"
+                        />
+                        <h4 class="cartao__item-titulo">HZC - Love machine</h4>
+                        <p class="cartao__item-perfil">Bruno Lopez</p>
+                    </li>
+                </ul>
+            </article>
+            <section class="secao secao-videos">
+                <h3 class="titulo-secao">Vídeos mais vistos</h3>
+                <article class="cartao">
+                    <img
+                        src="img/video_1.png"
+                        alt="Vídeo"
+                        class="cartao__imagem"
+                    />
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Bruno Lopez</p>
+                        <h3 class="cartao__titulo">HZC - Título</h3>
+                        <p class="cartao__info cartao__info--tempo">
+                            33 minutos
+                        </p>
+                        <button
+                            class="cartao__botao cartao__botao--play play-2"
+                            aria-label="Assistir agora"
+                        ></button>
+                    </div>
+                </article>
+                <article class="cartao">
+                    <img
+                        src="img/video_2.png"
+                        alt="Vídeo"
+                        class="cartao__imagem"
+                    />
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Bruno Lopez</p>
+                        <h3 class="cartao__titulo">HZC - Título</h3>
+                        <p class="cartao__info cartao__info--tempo">
+                            33 minutos
+                        </p>
+                        <button
+                            class="cartao__botao cartao__botao--play play-2"
+                            aria-label="Assistir agora"
+                        ></button>
+                    </div>
+                </article>
+                <article class="cartao">
+                    <img
+                        src="img/video_3.png"
+                        alt="Vídeo"
+                        class="cartao__imagem"
+                    />
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Bruno Lopez</p>
+                        <h3 class="cartao__titulo">HZC - Título</h3>
+                        <p class="cartao__info cartao__info--tempo">
+                            33 minutos
+                        </p>
+                        <button
+                            class="cartao__botao cartao__botao--play play-2"
+                            aria-label="Assistir agora"
+                        ></button>
+                    </div>
+                </article>
+                <article class="cartao">
+                    <img
+                        src="img/video_4.png"
+                        alt="Vídeo"
+                        class="cartao__imagem"
+                    />
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Bruno Lopez</p>
+                        <h3 class="cartao__titulo">HZC - Título</h3>
+                        <p class="cartao__info cartao__info--tempo">
+                            33 minutos
+                        </p>
+                        <button
+                            class="cartao__botao cartao__botao--play play-2"
+                            aria-label="Assistir agora"
+                        ></button>
+                    </div>
+                </article>
+            </section>
+            <article class="cartao cartao--recentes produtos-recentes">
+                <h3 class="cartao__titulo">Novas Artes</h3>
+                <a href="#" class="cartao__link">Ver todos</a>
+                <ul class="cartao__lista">
+                    <li class="cartao__item">
+                        <img
+                            src="img/arte-1.png"
+                            alt="Thumbnail"
+                            class="cartao__item-thumbnail"
+                        />
+                        <h4 class="cartao__item-titulo">Sem título 01</h4>
+                        <p class="cartao__item-perfil">Antonio Tebyriçá</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img
+                            src="img/arte-2.png"
+                            alt="Thumbnail"
+                            class="cartao__item-thumbnail"
+                        />
+                        <h4 class="cartao__item-titulo">Sem título 02</h4>
+                        <p class="cartao__item-perfil">Antonio Tebyriçá</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img
+                            src="img/arte-3.png"
+                            alt="Thumbnail"
+                            class="cartao__item-thumbnail"
+                        />
+                        <h4 class="cartao__item-titulo">Segurança</h4>
+                        <p class="cartao__item-perfil">Raphael Gibson</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img
+                            src="img/arte-4.png"
+                            alt="Thumbnail"
+                            class="cartao__item-thumbnail"
+                        />
+                        <h4 class="cartao__item-titulo">Malunguisse</h4>
+                        <p class="cartao__item-perfil">Carolina Canavarro</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img
+                            src="img/arte-5.png"
+                            alt="Thumbnail"
+                            class="cartao__item-thumbnail"
+                        />
+                        <h4 class="cartao__item-titulo">Coroa da converse</h4>
+                        <p class="cartao__item-perfil">Nikolas de Murtas</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img
+                            src="img/arte-3.png"
+                            alt="Thumbnail"
+                            class="cartao__item-thumbnail"
+                        />
+                        <h4 class="cartao__item-titulo">Segurança</h4>
+                        <p class="cartao__item-perfil">Raphael Gibson</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img
+                            src="img/arte-1.png"
+                            alt="Thumbnail"
+                            class="cartao__item-thumbnail"
+                        />
+                        <h4 class="cartao__item-titulo">Sem título 03</h4>
+                        <p class="cartao__item-perfil">Antonio Tebyriçá</p>
+                    </li>
+                </ul>
+            </article>
+            <article class="cartao cartao--destaque destaque-produtos">
+                <img
+                    src="img/banner-mobile_2.png"
+                    alt="Banner do cartao"
+                    class="cartao__imagem cartao__imagem--mobile"
+                />
+                <img
+                    src="img/banner_2.png"
+                    alt="Banner do cartao"
+                    class="cartao__imagem cartao__imagem--desktop"
+                />
+                <div class="cartao__conteudo">
+                    <p class="cartao__destaque">Vídeo em destaque</p>
+                    <h3 class="cartao__titulo">HZC - Título</h3>
+                    <p class="cartao__perfil">Bruno Lopez</p>
+                    <p class="cartao__info cartao__info--tempo">33 minutos</p>
+                    <p class="cartao__info cartao__info--visualizacao">
+                        33 visualizações
+                    </p>
+                    <button
+                        class="cartao__botao cartao__botao--play cartao__botao--destaque camisetas"
+                    >
+                        Comprar agora
+                    </button>
+                </div>
+            </article>
+            <section class="secao secao-produtos">
+                <h3 class="titulo-secao">Vídeos mais vistos</h3>
+                <article class="cartao">
+                    <img
+                        src="img/produto_1.png"
+                        alt="Vídeo"
+                        class="cartao__imagem"
+                    />
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Bruno Lopez</p>
+                        <h3 class="cartao__titulo">HZC - Título</h3>
+                        <p class="cartao__info cartao__info--tempo">
+                            33 minutos
+                        </p>
+                        <button
+                            class="cartao__botao cartao__botao--play play-2 camisetas"
+                            aria-label="Comprar agora"
+                        ></button>
+                    </div>
+                </article>
+                <article class="cartao">
+                    <img
+                        src="img/produto_2.png"
+                        alt="Vídeo"
+                        class="cartao__imagem"
+                    />
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Bruno Lopez</p>
+                        <h3 class="cartao__titulo">HZC - Título</h3>
+                        <p class="cartao__info cartao__info--tempo">
+                            33 minutos
+                        </p>
+                        <button
+                            class="cartao__botao cartao__botao--play play-2 camisetas"
+                            aria-label="Comprar agora"
+                        ></button>
+                    </div>
+                </article>
+                <article class="cartao">
+                    <img
+                        src="img/produto_3.png"
+                        alt="Vídeo"
+                        class="cartao__imagem"
+                    />
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Bruno Lopez</p>
+                        <h3 class="cartao__titulo">HZC - Título</h3>
+                        <p class="cartao__info cartao__info--tempo">
+                            33 minutos
+                        </p>
+                        <button
+                            class="cartao__botao cartao__botao--play play-2 camisetas"
+                            aria-label="Comprar agora"
+                        ></button>
+                    </div>
+                </article>
+                <article class="cartao">
+                    <img
+                        src="img/produto_4.png"
+                        alt="Vídeo"
+                        class="cartao__imagem"
+                    />
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Bruno Lopez</p>
+                        <h3 class="cartao__titulo">HZC - Título</h3>
+                        <p class="cartao__info cartao__info--tempo">
+                            33 minutos
+                        </p>
+                        <button
+                            class="cartao__botao cartao__botao--play play-2 camisetas"
+                            aria-label="Comprar agora"
+                        ></button>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <script src="main.js"></script>
+    </body>
+</html>
